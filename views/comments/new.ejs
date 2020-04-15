@@ -1,0 +1,15 @@
+<%- include("../partials/header")%>
+
+
+<h1 class="mx-auto text-center mt-5 mb-4">Create a new comment to <%=campground.name%></h1>
+<div class="form mx-auto"> 
+<form action="/campgrounds/<%=campground._id%>/comments" method="POST" >
+    <div class="form-group"> <input  class="form-control"type="text" name="comment[text]" id="text" placeholder="text"></div>
+<div class="form-group"> <button class="btn btn-primary btn-block" type="submit">Submit</button></div>
+
+<!-- <button type="button" class="btn btn-info">Submit</button> -->
+
+</form>
+<a href="/campgrounds/<%=campground._id%>" class="block mr-auto">Go back!</a>
+</div>
+<%- include("../partials/footer")%>
