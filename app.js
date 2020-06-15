@@ -20,8 +20,8 @@ var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
 
-// mongoose.connect("mongodb://localhost/yelp_camp_v6");
-mongoose.connect("mongodb+srv://admin:olga1507@cluster0-a3uuf.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connect("mongodb://localhost/yelp_camp_v6");
+// mongoose.connect("mongodb+srv://admin:olga1507@cluster0-a3uuf.mongodb.net/test?retryWrites=true&w=majority");
 
 
 
